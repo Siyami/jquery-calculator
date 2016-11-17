@@ -3,39 +3,40 @@
 <head>
   <meta charset="utf-8">
   <title>jQuery Calculator</title>
+
+  <script defer src="js/jquery.js"></script>
+  <script defer src="js/app.js"></script>
+
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
   <div id="calculator">
     <div id="screen-container">
-      <div id="screen"></div>
+      <div><input id="screen" type="text"></div>
     </div>
 
     <div id="buttons-container">
       <div class="buttons">
-        <span class="operator" id="clear">C</span>
-        <span class="operator">÷</span>
-        <span class="operator">x</span>
-        <span>7</span>
-        <span>8</span>
-        <span>9</span>
-        <span class="operator">-</span>
-        <span>4</span>
-        <span>5</span>
-        <span>6</span>
-        <span class="operator">+</span>
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span class="operator" id="equals">=</span>
+        <span class="operator" id="clear">C<input value="C" type="button"></span>
+        <span class="operator"><input value="/" type="button" class="btn"></span>
+        <span class="operator"><input value="x" type="button" class="btn"></span>
+        <span><input value="7" type="button" class="btn"></span>
+        <span><input value="8" type="button" class="btn"></span>
+        <span><input value="9" type="button" class="btn"></span>
+        <span class="operator"><input value="-" type="button" class="btn"></span>
+        <span><input value="4" type="button" class="btn"></span>
+        <span><input value="5" type="button" class="btn"></span>
+        <span><input value="6" type="button" class="btn"></span>
+        <span class="operator"><input value="+" type="button" class="btn"></span>
+        <span><input value="1" type="button" class="btn"></span>
+        <span><input value="2" type="button" class="btn"></span>
+        <span><input value="3" type="button" class="btn"></span>
+        <span class="operator" id="equals"><input value="=" type="button"></span>
         <div class="l-row">
-          <span id="zero">0</span>
+          <span id="zero"><input value="0" type="button" class="btn"></span>
         </div>
       </div>
     </div>
   </div>
-
-  <script src="js/jquery.js"></script>
-  <script src="js/app.js"></script>
 </body>
 </html>
