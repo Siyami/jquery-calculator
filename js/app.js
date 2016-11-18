@@ -1,41 +1,24 @@
-$(document).ready(function(e) {
-  // 'use strict';
+(function() {
+  'use strict';
 
-  $('.btn').click(function(e) {
+  $('.buttons').on('click', (event) => {
+    const buttonText = $(event.target).attr('name');
+    const screenText = $('#screen').text(); // empty
 
-    $('#screen').val($('#screen').val() + $(this).val());
-
+    $('#screen').text(screenText + buttonText);
   });
 
-  $('#clear').click(function(e) {
-    $('#screen').val('');
+  $('#clear').on('click', (event) => {
+    $('#screen').text('');
+    event.stopPropagation();
   });
 
-  $('#equals').click(function(e) {
-    $('#screen').val(eval($('#screen').val()));
+  $('#equals').on('click', (event) => {
+    const buttonText = $(event.target).text(); //
+    const screenText = $('#screen').text(); // empty
+
+    $('#screen').text(screenText + buttonText);
+    $('#screen').text(eval(screenText));
+    event.stopPropagation();
   });
-
-
-});
-
-//
-// (function() {
-//   'use strict';
-//
-//   $('span').on('click', (event) => {
-//     $(event.target).toggleClass('completed hot');
-//   });
-//
-//   $('#add-movie').on('submit', (event) => {
-//     event.preventDefault();
-//     const movieTitle = $('#movie-title').val();
-//
-//     const $newMovie = $('<li>').text(movieTitle);
-//
-//     $('.movies ul').append($newMovie);
-//
-//     $('#movie-title').val('');
-//
-//   });
-//
-// })();
+})();

@@ -12,28 +12,29 @@
 <body>
   <div id="calculator">
     <div id="screen-container">
-      <div><input id="screen" type="text"></div>
+      <div id="screen"></div>
     </div>
 
     <div id="buttons-container">
       <div class="buttons">
-        <span class="operator" id="clear">C<input value="C" type="button"></span>
-        <span class="operator"><input value="/" type="button" class="btn"></span>
-        <span class="operator"><input value="x" type="button" class="btn"></span>
-        <span><input value="7" type="button" class="btn"></span>
-        <span><input value="8" type="button" class="btn"></span>
-        <span><input value="9" type="button" class="btn"></span>
-        <span class="operator"><input value="-" type="button" class="btn"></span>
-        <span><input value="4" type="button" class="btn"></span>
-        <span><input value="5" type="button" class="btn"></span>
-        <span><input value="6" type="button" class="btn"></span>
-        <span class="operator"><input value="+" type="button" class="btn"></span>
-        <span><input value="1" type="button" class="btn"></span>
-        <span><input value="2" type="button" class="btn"></span>
-        <span><input value="3" type="button" class="btn"></span>
-        <span class="operator" id="equals"><input value="=" type="button"></span>
+        <span name="clear" class="operator" id="clear">C</span>
+        <span name="/" class="operator">÷</span>
+        <span name="*" class="operator">x</span>
+        <!-- <span><input value="7" id="seven" type="button" ></span> -->
+        <span name="7">7</span>
+        <span name="8">8</span>
+        <span name="9">9</span>
+        <span name="-" class="operator">-</span>
+        <span name="4">4</span>
+        <span name="5">5</span>
+        <span name="6">6</span>
+        <span name="+" class="operator">+</span>
+        <span name="1">1</span>
+        <span name="2">2</span>
+        <span name="3">3</span>
+        <span name="=" class="operator" id="equals">=</span>
         <div class="l-row">
-          <span id="zero"><input value="0" type="button" class="btn"></span>
+          <span name="0" id="zero">0</span>
         </div>
       </div>
     </div>
